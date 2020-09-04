@@ -1,0 +1,198 @@
+Microsoft (R) SQL Server 2008 R2
+用法:
+ setup.exe /[选项]={value} /[选项]={value} ...
+
+ 选项:
+ ACTION                       指定安装程序的工作流，如 INSTALL、UNINSTALL 或 UPGRADE。这是必需的参数。
+ ADDCURRENTUSERASSQLADMIN     Provision current user as a Database Engine
+                              system administrator for SQL Server 2008 R2
+                              Express.
+ AGTDOMAINGROUP               Either domain user name or system account
+ AGTSVCACCOUNT                Either domain user name or system account
+ AGTSVCPASSWORD               Password for domain user name. Not required for
+                              system account
+ AGTSVCSTARTUPTYPE            Either 1 or 0
+ ALLINSTANCES                 指定所有实例都将包括在安装操作中。只有在应用修补程序时才支持此参数。
+ ASBACKUPDIR                  The location for the Analysis Services backup
+                              files.
+ ASCOLLATION                  The collation used by Analysis Services.
+ ASCONFIGDIR                  The location for the Analysis Services
+                              configuration files.
+ ASDATADIR                    The location for the Analysis Services data
+                              files.
+ ASDOMAINGROUP                Specifies the Analysis Services domain group
+                              name.
+ ASLOGDIR                     The location for the Analysis Services log files.
+ ASPROVIDERMSOLAP             Specifies if the MSOLAP provider can run in
+                              process.
+ ASSVCACCOUNT                 The account used by the Analysis Services
+                              service.
+ ASSVCPASSWORD                The password for the Analysis Services service
+                              account.
+ ASSVCSTARTUPTYPE             Controls the service startup type setting for the
+                              service.
+ ASSYSADMINACCOUNTS           Specifies the list of administrator accounts to
+                              provision.
+ ASTEMPDIR                    The location for the Analysis Services temporary
+                              files.
+ BROWSERSVCSTARTUPTYPE        Startup type for Browser Service.
+ CLUSTERPASSIVE               指定 SQL Server 安装程序不应管理 SQL Server 服务。此选项应该仅在非
+                              Microsoft 群集环境中使用。
+ CONFIGURATIONFILE            指定将用于安装程序的配置文件。
+ CUSOURCE                     用于更新安装程序介质的提取的累计更新文件目录。
+ ENABLERANU                   Set to "1" to enable RANU for SQL Server Express.
+ ENU                          尚未定义命令行参数 ENU 的详细帮助。
+ ERRORREPORTING               指定是否可将错误报告给 Microsoft 以便改进以后的 SQL Server 版本。指定 1
+                              或 True 将启用此功能，指定 0 或 False 将禁用此功能。
+ FAILOVERCLUSTERDISKS         Specifies a cluster shared disk to associate with
+                              the SQL Server failover cluster instance.
+ FAILOVERCLUSTERGROUP         Specifies the name of the cluster group for the
+                              SQL Server failover cluster instance.
+ FAILOVERCLUSTERIPADDRESSES   Specifies an encoded IP address. The encodings
+                              are semicolon-delimited (;), and follow the
+                              format <IP Type>;<address>;<network name>;<subnet
+                              mask>. Supported IP types include DHCP, IPV4, and
+                              IPV6.
+ FAILOVERCLUSTERNETWORKNAME   Specifies the name of the SQ LServer failover
+                              cluster instance.  This name is the network name
+                              that is used to connect to SQL Server services.
+ FAILOVERCLUSTERROLLOWNERSHIP Specifies whether the upgraded nodes should take
+                              ownership of the failover instance group or not.
+                              Use 0 to retain ownership in the legacy nodes, 1
+                              to make the upgraded nodes take ownership, or 2
+                              to let SQL Server Setup decide when to move
+                              ownership.
+ FARMACCOUNT                  User account for running the SharePoint Central
+                              Administration service and connecting to the
+                              SharePoint configuration database.
+ FARMADMINPORT                A port number used to connect to the SharePoint
+                              Central Administration web application.
+ FARMPASSWORD                 The password for the farm account.
+ FEATURES                     指定要安装、卸载或升级的功能。顶级功能列表包括 SQL、AS、RS、IS 和工具。SQL
+                              功能将安装数据库引擎、复制和全文。工具功能将安装管理工具、联机丛书、Business
+                              Intelligence Development Studio 和其他共享组件。
+ FILESTREAMLEVEL              Level to enable FILESTREAM feature at (0, 1, 2 or
+                              3).
+ FILESTREAMSHARENAME          Name of Windows share to be created for
+                              FILESTREAM File I/O.
+ FTSVCACCOUNT                 User account for Full-text Filter Daemon Host.
+ FTSVCPASSWORD                User password for Full-text Filter Daemon Host
+                              account.
+ FTUPGRADEOPTION              Full-text catalog upgrade option.
+ HELP                         显示命令行参数用法
+ IACCEPTSQLSERVERLICENSETERMS 通过指定此参数并接受 SQL Server 许可条款，您确认已阅读并理解使用条款的内容。
+ INDICATEPROGRESS             指定应将详细的安装程序日志传送到控制台。
+ INSTALLSHAREDDIR             指定本机共享组件的安装根目录。
+ INSTALLSHAREDWOWDIR          指定 WOW64 共享组件的安装根目录。
+ INSTALLSQLDATADIR            The Database Engine root data directory.
+ INSTANCEDIR                  指定实例根目录。
+ INSTANCEID                   为您已指定的 SQL Server 功能指定实例 ID。SQL Server
+                              目录结构、注册表结构和服务名称将反映 SQL Server 实例的实例 ID。
+ INSTANCENAME                 指定默认实例或命名实例。MSSQLSERVER 是非 Express
+                              版本的默认实例，SQLExpress 则是 Express 版本的默认实例。在安装 SQL
+                              Server 数据库引擎(SQL)、Analysis Services (AS)或
+                              Reporting Services (RS)时，此参数是必需的。
+ ISSVCACCOUNT                 Either domain user name or system account.
+ ISSVCPASSWORD                Password for domain user.
+ ISSVCSTARTUPTYPE             Automatic, Manual or Disabled.
+ NPENABLED                    Specify 0 to disable or 1 to enable the Named
+                              Pipes protocol.
+ PASSPHRASE                   A pass phrase farm administrators will use to add
+                              application servers or Web front end servers to
+                              an existing farm. The pass phrase must be at
+                              least 8 characters and contain a combination of
+                              uppercase, lowercase, numeric, and non-alphabetic
+                              characters (such as !, $, #, %).
+ PCUSOURCE                    用于更新安装程序介质的提取的 Service Pack 文件目录。
+ PID                          指定 SQL Server 产品密钥以配置您要使用哪个版本。
+ QUIET                        安装程序将不会显示任何用户界面。
+ QUIETSIMPLE                  安装程序将只显示进度，不需要任何用户交互。
+ ROLE                         尚未定义命令行参数 ROLE 的详细帮助。
+ RSCATALOGSERVERINSTANCENAME  The SQL Server server for the report server
+                              catalog database.
+ RSINSTALLMODE                Specifies the installation mode for the report
+                              server. Valid values include Default,
+                              DefaultSharePoint, and FilesOnly. The default
+                              value for InstallMode is FilesOnly.
+ RSSVCACCOUNT                 Specify the service account of the report server.
+                              This value is required. If you omit this value,
+                              Setup will use the default built-in account for
+                              the current operating system (either
+                              NetworkService or LocalSystem). If you specify a
+                              domain user account, the domain must be under 254
+                              characters and the user name must be under 20
+                              characters. The account name cannot contain the
+                              following characters:
+                              " / \ [ ] : ; | = , + * ? < >
+ RSSVCPASSWORD                Specify a strong password for the account. A
+                              strong password is at least 8 characters and
+                              includes a combination of upper and lower case
+                              alphanumeric characters and at least one symbol
+                              character. Avoid spelling an actual word or name
+                              that might be listed in a dictionary.
+ RSSVCSTARTUPTYPE             Specifies the startup mode for the Report Server
+                              service. Valid values include Manual, Automatic,
+                              and Disabled. The default value for StartupType
+                              is Manual, where the server is started when a
+                              request is received.
+ RSUPGRADEDATABASEACCOUNT     Specify the account used to access the existing
+                              report server catalog database. This value is
+                              required. If you omit this value, Setup will use
+                              the default built-in account for the current
+                              operating system (either NetworkService or
+                              LocalSystem). If you specify a domain user
+                              account, the domain must be under 254 characters
+                              and the user name must be under 20 characters.
+                              The account name cannot contain the following
+                              characters:
+                              " / \ [ ] : ; | = , + * ? < >
+ RSUPGRADEPASSWORD            Specify a strong password for the account. A
+                              strong password is at least 8 characters and
+                              includes a combination of upper and lower case
+                              alphanumeric characters and at least one symbol
+                              character. Avoid spelling an actual word or name
+                              that might be listed in a dictionary.
+ RULES                        指定要运行的规则 ID 或规则组 ID 的列表。
+ SAPWD                        Password for SQL Server sa account.
+ SECURITYMODE                 The default is Windows Authentication. Use "SQL"
+                              for Mixed Mode Authentication.
+ SQLBACKUPDIR                 Default directory for the Database Engine backup
+                              files.
+ SQLCOLLATION                 Specifies a Windows collation or an SQL collation
+                              to use for the Database Engine.
+ SQLDOMAINGROUP               Domain group name for Windows Server 2003
+                              failover instance.
+ SQLSVCACCOUNT                Account for SQL Server service: Domain\User or
+                              system account.
+ SQLSVCPASSWORD               A SQL Server service password is required only
+                              for a domain account.
+ SQLSVCSTARTUPTYPE            Startup type for the SQL Server service.
+ SQLSYSADMINACCOUNTS          Windows account(s) to provision as SQL Server
+                              system administrators.
+ SQLTEMPDBDIR                 Directory for Database Engine TempDB files.
+ SQLTEMPDBLOGDIR              Directory for the Database Engine TempDB log
+                              files.
+ SQLUSERDBDIR                 Default directory for the Database Engine user
+                              databases.
+ SQLUSERDBLOGDIR              Default directory for the Database Engine user
+                              database logs.
+ SQMREPORTING                 指定可以收集 SQL Server 功能使用情况数据，并将数据发送到 Microsoft。指定 1
+                              或 True 将启用此功能，指定 0 或 False 将禁用此功能。
+ TCPENABLED                   Specify 0 to disable or 1 to enable the TCP/IP
+                              protocol.
+ UIMODE                       UIMode 设置的有效值是 Normal、AutoAdvance。
+ X86                          指定安装程序应该安装到 WOW64 中。IA64 或 32 位系统不支持此命令行参数。
+
+完整的无人参与安装示例，显示所有必需的参数:
+
+
+setup.exe /Q /IACCEPTSQLSERVERLICENSETERMS /ACTION=install /PID=<validpid> /FEATURES=SQL,AS,RS,IS,Tools
+/INSTANCENAME=MSSQLSERVER /SQLSVCACCOUNT="MyDomain\MyAccount"
+/SQLSVCPASSWORD="************" /SQLSYSADMINACCOUNTS="MyDomain\MyAccount "
+/AGTSVCACCOUNT="MyDomain\MyAccount" /AGTSVCPASSWORD="************"
+/ASSVCACCOUNT="MyDomain\MyAccount" /ASSVCPASSWORD="************"
+/RSSVCACCOUNT="MyDomain\MyAccount" /RSSVCPASSWORD="************"
+/ISSVCAccount="MyDomain\MyAccount" /ISSVCPASSWORD="************"
+/ASSYSADMINACCOUNTS="MyDomain\MyAccount"
+
+按任意键退出...
